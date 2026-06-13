@@ -5,6 +5,12 @@
 
 let num1
 num1 = parseInt(prompt( "ingrese un número entero y positivo"))
-for( let i = 1; i <= num1; i++){
-    console.log(i + " Se balanceaba sobre la tela de una araña..")
+
+if (isNaN(num1) || (!isNaN(num1) && num1 < 0)) {
+    console.log('Error')
+} else {
+
+    for (let i = 1; i <= num1; i++) {
+        console.log(i + " Se balanceaba sobre la tela de una araña..")
+    }
 }
